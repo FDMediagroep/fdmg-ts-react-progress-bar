@@ -14,8 +14,10 @@ script:
 - npm run lint
 after_success:
 - cat ./dist/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
-#deploy:
-#  provider: npm
-#  email: willem_liu@hotmail.com
-#  on:
-#    branch: master
+deploy:
+  provider: npm
+  email: willem_liu@hotmail.com
+  on:
+    branch: master
+  api_key:
+    secure: o+FO8j5K3Axmsuzi4+0HZ3QLnVAJ6RTgdJi4TuCIVhpfbEGuvv7IkMQyqrqgUJtJ7u255aILYE6MQt+tzT2mtycVJTMmOfPrVJwL4f8dS6r4jLWJ26JWUcWtoMiJKgZh4EIfVXveBaiA6uyFO0JJz6vsWwrcAWpKr/I3bZG4afGnxWo24RRwxJgGDcKNnE+rT4EXpoQ073Gcs83iGUdYH8JhHFPC+J0s5OsFv4Zt22Vou6Vh+nKSoVRFHqtuGLDx6DeVmZtEgviKEOkG0exfS9tyLjBGFPvxqmJXkA71UNNnerGyIKbWDE5xYiwOG0qm7TimreBcmV1h44F4al+ZITUhmg7GdZ37MZkTR7RnwuzwZR116fqzkbAzMaOBdBNC/HM3hYGJtfdZHbxZ/joeO+tX+FVKfIWzWJA20BpFuXzSp53FmniDx0IOZSR6uX6isNbaWmPhYlcz5g/SZtZbswHwZKFDj2S4NOSfwzpol8pnDTSXl5dwFjHuS0w/o3HO+LJaSfYBd/dVuJHl7eXvDBLl8yZkfZ6WlQyYWz1mRBd6qbw0RcJ/UZ4+oKD7SqAc9nRiD/f0lOEQhXUtXg1AMvfrHQYOITzPOccuKi0Kferkv5F3poCYNYMwYRaFB1D6iAPMQ6PWbiM+Zxp2Qjf0IIIZL6RSZEm6DjxVGkwcfHE=
