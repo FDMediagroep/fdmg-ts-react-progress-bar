@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-h1.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-h1)
-[![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-h1/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-h1?branch=master)
+[![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-progress-bar.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-progress-bar)
+[![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-progress-bar/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-progress-bar?branch=master)
 
-[![npm version](https://badge.fury.io/js/fdmg-ts-react-h1.svg)](https://badge.fury.io/js/fdmg-ts-react-h1)
+[![npm version](https://badge.fury.io/js/fdmg-ts-react-progress-bar.svg)](https://badge.fury.io/js/fdmg-ts-react-progress-bar)
 
-# fdmg-ts-react-h1
+# fdmg-ts-react-progress-bar
 [ReactJS](https://reactjs.org/) ProgressBar component. This component renders a progress bar using an input of 
 `type=range`.
 
