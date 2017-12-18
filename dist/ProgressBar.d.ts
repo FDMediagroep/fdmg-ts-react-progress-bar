@@ -10,7 +10,7 @@ export interface Props {
     hideTimeLine: RegExpMatchArray | boolean;
 }
 /**
- * Progress bar composition.
+ * Progress bar component.
  */
 export default class ProgressBar extends React.Component<Props, any> {
     state: any;

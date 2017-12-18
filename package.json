@@ -1,6 +1,6 @@
 {
-  "name": "fdmg-ts-react-progress-bar",
-  "version": "1.0.0",
+  "name": "@fdmg/ts-react-progress-bar",
+  "version": "1.0.1",
   "description": "ReactJS ProgressBar component",
   "main": "dist/ProgressBar.js",
   "types": "dist/ProgressBar.d.ts",
@@ -15,15 +15,18 @@
     "type": "git",
     "url": "git@github.com:FDMediagroep/fdmg-ts-react-progress-bar.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Willem Liu, Alexander Eerenberg",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^21.1.8",
-    "@types/react": "^16.0.28",
+    "@types/react": "^16.0.31",
     "coveralls": "^3.0.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "enzyme-to-json": "^3.2.2",
+    "enzyme-to-json": "^3.3.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
     "raf": "^3.4.0",

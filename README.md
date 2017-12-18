@@ -1,18 +1,18 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-progress-bar.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-progress-bar)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-progress-bar/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-progress-bar?branch=master)
 
-[![npm version](https://badge.fury.io/js/fdmg-ts-react-progress-bar.svg)](https://badge.fury.io/js/fdmg-ts-react-progress-bar)
+[![npm version](https://badge.fury.io/js/%40fdmg%2Fts-react-progress-bar.svg)](https://badge.fury.io/js/%40fdmg%2Fts-react-progress-bar)
 
 # fdmg-ts-react-progress-bar
 [ReactJS](https://reactjs.org/) ProgressBar component. This component renders a progress bar using an input of 
 `type=range`.
 
 ## Installation
-- Run `npm i --save-dev fdmg-ts-react-progress-bar`
+- Run `npm i --save-dev @fdmg/ts-react-progress-bar`
 
 or
 
-- Run `yarn add fdmg-ts-react-progress-bar --dev`
+- Run `yarn add @fdmg/ts-react-progress-bar --dev`
 
 ## Usage
 ### TypeScript

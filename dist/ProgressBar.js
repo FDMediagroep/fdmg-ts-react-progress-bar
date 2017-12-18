@@ -12,7 +12,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 /**
- * Progress bar composition.
+ * Progress bar component.
  */
 var ProgressBar = /** @class */ (function (_super) {
     __extends(ProgressBar, _super);
