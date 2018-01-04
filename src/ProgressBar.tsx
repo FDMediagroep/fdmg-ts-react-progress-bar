@@ -25,7 +25,7 @@ export default class ProgressBar extends React.Component<Props, any> {
 
     render() {
         const spinner = this.props.isBuffering ? (
-            <div className="spinner">
+            <div className="loader">
                 <div className="double-bounce1"/>
                 <div className="double-bounce2"/>
             </div>
