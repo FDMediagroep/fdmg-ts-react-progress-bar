@@ -23,7 +23,7 @@ var ProgressBar = /** @class */ (function (_super) {
     }
     ProgressBar.prototype.render = function () {
         var _this = this;
-        var spinner = this.props.isBuffering ? (React.createElement("div", { className: "spinner" },
+        var spinner = this.props.isBuffering ? (React.createElement("div", { className: "loader" },
             React.createElement("div", { className: "double-bounce1" }),
             React.createElement("div", { className: "double-bounce2" }))) : "";
         var timeLine = this.props.hideTimeLine ? "" : (React.createElement("div", { className: "time-line" },
