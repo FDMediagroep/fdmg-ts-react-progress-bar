@@ -7,7 +7,9 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-ts-react-progress-bar.svg)](https://greenkeeper.io/)
 [ReactJS](https://reactjs.org/) ProgressBar component. This component renders a progress bar using an input of 
-`type=range`.
+`type=range`. An screenshot of the ProgressBar in action below:
+
+![alt text](https://github.com/FDMediagroep/fdmg-ts-react-progress-bar/blob/master/demo/screenshots/audio-widget.png)
 
 ## Installation
 - Run `npm i --save-dev @fdmg/ts-react-progress-bar`
