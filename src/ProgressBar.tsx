@@ -41,7 +41,6 @@ export default class ProgressBar extends React.Component<Props, any> {
     }
 
     render() {
-        console.log(this.props.hideProgressBarCurrentTime, this.props.hideProgressBarDuration);
         const spinner = this.props.isBuffering ? (
             <div className="loader">
                 <div className="double-bounce1"/>
