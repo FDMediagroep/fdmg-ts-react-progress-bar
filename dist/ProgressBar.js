@@ -35,7 +35,6 @@ var ProgressBar = /** @class */ (function (_super) {
     }
     ProgressBar.prototype.render = function () {
         var _this = this;
-        console.log(this.props.hideProgressBarCurrentTime, this.props.hideProgressBarDuration);
         var spinner = this.props.isBuffering ? (React.createElement("div", { className: "loader" },
             React.createElement("div", { className: "double-bounce1" }),
             React.createElement("div", { className: "double-bounce2" }))) : "";

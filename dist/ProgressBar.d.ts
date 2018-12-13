@@ -1,10 +1,10 @@
 import * as React from 'react';
 export interface Props {
-    currentTime: number;
-    duration: number;
+    currentTime?: number;
+    duration?: number;
     percentage: number;
-    hideProgressBarCurrentTime: boolean;
-    hideProgressBarDuration: boolean;
+    hideProgressBarCurrentTime?: boolean;
+    hideProgressBarDuration?: boolean;
     onElapsedTimeUpdate: (...args: any[]) => void;
     autoPlay: boolean;
     isBuffering: boolean;
