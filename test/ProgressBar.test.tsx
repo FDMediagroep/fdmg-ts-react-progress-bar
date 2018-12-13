@@ -25,6 +25,8 @@ describe('ProgressBar', () => {
                 autoPlay={false}
                 isBuffering={false}
                 hideTimeLine={false}
+                hideProgressBarCurrentTime={false}
+                hideProgressBarDuration={false}
             />);
 
         expect(toJson(component)).toMatchSnapshot();
@@ -40,6 +42,59 @@ describe('ProgressBar', () => {
                 autoPlay={false}
                 isBuffering={false}
                 hideTimeLine={true}
+                hideProgressBarCurrentTime={false}
+                hideProgressBarDuration={false}
+            />);
+
+        expect(toJson(component)).toMatchSnapshot();
+    });
+
+    test('renders correctly without the progress bar its currentTime', () => {
+        const component = shallow(
+            <ProgressBar
+                percentage={33}
+                currentTime={1234}
+                duration={12345}
+                onElapsedTimeUpdate={empty}
+                autoPlay={false}
+                isBuffering={false}
+                hideTimeLine={false}
+                hideProgressBarCurrentTime={true}
+                hideProgressBarDuration={false}
+            />);
+
+        expect(toJson(component)).toMatchSnapshot();
+    });
+
+    test('renders correctly without the progress bar its duration', () => {
+        const component = shallow(
+            <ProgressBar
+                percentage={33}
+                currentTime={1234}
+                duration={12345}
+                onElapsedTimeUpdate={empty}
+                autoPlay={false}
+                isBuffering={false}
+                hideTimeLine={false}
+                hideProgressBarCurrentTime={false}
+                hideProgressBarDuration={true}
+            />);
+
+        expect(toJson(component)).toMatchSnapshot();
+    });
+
+    test('renders correctly when all time indicators are disabled', () => {
+        const component = shallow(
+            <ProgressBar
+                percentage={33}
+                currentTime={1234}
+                duration={12345}
+                onElapsedTimeUpdate={empty}
+                autoPlay={false}
+                isBuffering={false}
+                hideTimeLine={false}
+                hideProgressBarCurrentTime={true}
+                hideProgressBarDuration={true}
             />);
 
         expect(toJson(component)).toMatchSnapshot();
@@ -58,6 +113,8 @@ describe('ProgressBar', () => {
                 autoPlay={false}
                 isBuffering={false}
                 hideTimeLine={false}
+                hideProgressBarCurrentTime={false}
+                hideProgressBarDuration={false}
             />);
 
         progressBarComponent.find('input').simulate('change', { target: { value: 75 }});

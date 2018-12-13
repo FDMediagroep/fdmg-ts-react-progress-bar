@@ -29,10 +29,108 @@ exports[`ProgressBar renders correctly 1`] = `
     className="counters"
   >
     <span>
-      1234
+      20m 34s
     </span>
     <span>
-      12345
+      3u 25m 45s
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ProgressBar renders correctly when all time indicators are disabled 1`] = `
+<div
+  className="progress"
+>
+  <div>
+    <div
+      className="time-line"
+    >
+      <span
+        className="time-line-progress-bar"
+        style={
+          Object {
+            "width": "33%",
+          }
+        }
+      />
+      <input
+        onChange={[Function]}
+        onInput={[Function]}
+        step="0.01"
+        type="range"
+        value={33}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProgressBar renders correctly without the progress bar its currentTime 1`] = `
+<div
+  className="progress"
+>
+  <div>
+    <div
+      className="time-line"
+    >
+      <span
+        className="time-line-progress-bar"
+        style={
+          Object {
+            "width": "33%",
+          }
+        }
+      />
+      <input
+        onChange={[Function]}
+        onInput={[Function]}
+        step="0.01"
+        type="range"
+        value={33}
+      />
+    </div>
+  </div>
+  <div
+    className="counters"
+  >
+    <span>
+      3u 25m 45s
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ProgressBar renders correctly without the progress bar its duration 1`] = `
+<div
+  className="progress"
+>
+  <div>
+    <div
+      className="time-line"
+    >
+      <span
+        className="time-line-progress-bar"
+        style={
+          Object {
+            "width": "33%",
+          }
+        }
+      />
+      <input
+        onChange={[Function]}
+        onInput={[Function]}
+        step="0.01"
+        type="range"
+        value={33}
+      />
+    </div>
+  </div>
+  <div
+    className="counters"
+  >
+    <span>
+      20m 34s
     </span>
   </div>
 </div>
@@ -47,10 +145,10 @@ exports[`ProgressBar renders correctly without time-line 1`] = `
     className="counters"
   >
     <span>
-      1234
+      20m 34s
     </span>
     <span>
-      12345
+      3u 25m 45s
     </span>
   </div>
 </div>

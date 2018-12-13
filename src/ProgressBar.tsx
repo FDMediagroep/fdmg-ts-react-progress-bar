@@ -4,6 +4,8 @@ export interface Props {
     currentTime: number;
     duration: number;
     percentage: number;
+    hideProgressBarCurrentTime: boolean;
+    hideProgressBarDuration: boolean;
     onElapsedTimeUpdate: (...args: any[]) => void;
     autoPlay: boolean;
     isBuffering: boolean;
@@ -23,7 +25,23 @@ export default class ProgressBar extends React.Component<Props, any> {
         this.props = props;
     }
 
+    /**
+     *  Convert seconds (number) to a human readable time format: 2u 3m 34s
+     */
+    convertToReadableTime = (seconds: number) => {
+        const h = Math.floor(seconds / 3600);
+        const m = Math.floor(seconds % 3600 / 60);
+        const s = Math.floor(seconds % 3600 % 60);
+
+        const hDisplay = h > 0 ? h + "u " : "";
+        const mDisplay = m > 0 ? m + "m " : "";
+        const sDisplay = s > 0 ? s + "s" : "";
+
+        return hDisplay + mDisplay + sDisplay;
+    }
+
     render() {
+        console.log(this.props.hideProgressBarCurrentTime, this.props.hideProgressBarDuration);
         const spinner = this.props.isBuffering ? (
             <div className="loader">
                 <div className="double-bounce1"/>
@@ -47,20 +65,31 @@ export default class ProgressBar extends React.Component<Props, any> {
             </div>
         );
 
+        const currentTime = this.props.hideProgressBarCurrentTime ? "" : (
+            <span>
+                {(this.props.currentTime === 0) ? "" : this.convertToReadableTime(this.props.currentTime)}
+            </span>
+        );
+
+        const duration = this.props.hideProgressBarDuration ? "" : (
+            <span>
+                {(this.props.duration === 0) ? "" : this.convertToReadableTime(this.props.duration)}
+            </span>
+        );
+
+        const counters = this.props.hideProgressBarCurrentTime && this.props.hideProgressBarDuration ? "" : (
+            <div className="counters">
+                {currentTime}
+                {duration}
+            </div>
+        );
+
         return (
             <div className="progress">
                 <div>
                     {timeLine}
                 </div>
-
-                <div className="counters">
-                    <span>
-                        {(this.props.currentTime === 0) ? "" : this.props.currentTime}
-                    </span>
-                    <span>
-                        {(this.props.duration === 0) ? "" : this.props.duration}
-                    </span>
-                </div>
+                {counters}
             </div>
         );
     }
