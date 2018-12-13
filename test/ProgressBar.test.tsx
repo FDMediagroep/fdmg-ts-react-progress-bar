@@ -49,6 +49,23 @@ describe('ProgressBar', () => {
         expect(toJson(component)).toMatchSnapshot();
     });
 
+    test('converts seconds to human readable time', () => {
+        const audioComponent = shallow(
+            <ProgressBar
+                percentage={33}
+                currentTime={1234}
+                duration={12345}
+                onElapsedTimeUpdate={empty}
+                autoPlay={false}
+                isBuffering={false}
+                hideTimeLine={true}
+                hideProgressBarCurrentTime={false}
+                hideProgressBarDuration={false}
+            />);
+
+        expect(audioComponent.instance().convertToReadableTime(11234)).toBe('3u 7m 14s');
+    });
+
     test('renders correctly without the progress bar its currentTime', () => {
         const component = shallow(
             <ProgressBar
