@@ -1,3 +1,5 @@
+> :exclamation: **DEPRECATED** :exclamation:
+
 [![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-progress-bar.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-progress-bar)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-progress-bar/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-progress-bar?branch=master)
 
